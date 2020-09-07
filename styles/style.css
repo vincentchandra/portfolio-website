@@ -7,13 +7,22 @@ body {
   font-family: "Raleway", sans-serif !important;
   scroll-behavior: smooth;
 }
+html {
+  overflow-x: hidden;
+}
 header {
-  background-image: url("../img/header.jpg");
-  height: 100%;
-  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/header2.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  /* background-position: right center; */
+  min-height: 100%;
+  min-width: 100%;
   position: relative;
 }
 header h1 {
+  color: white;
   width: auto;
   font-size: 50px;
   font-weight: 300;
@@ -26,11 +35,12 @@ header h1 {
 header .name {
   margin: 0;
   font-size: 50px;
-  color: rgb(241, 56, 102);
-  /* color: rgb(6, 5, 46); */
+  color: rgb(253, 25, 139);
   font-weight: 600;
 }
+
 header p {
+  color: white;
   font-weight: 400;
   font-size: 30px;
 }
@@ -63,12 +73,10 @@ nav button {
   /* position: absolute; */
   margin: auto;
 }
-
 .about-content {
   /* display: flex; */
   margin: 0;
 }
-
 .data-diri {
   margin-left: 30px;
   font-size: 30px;
@@ -174,6 +182,10 @@ footer p {
 }
 
 @media only screen and (max-width: 1000px) {
+  header {
+    background-position: center center;
+    background-size: 200%;
+  }
   .data-diri {
     margin-left: 50px;
     margin-right: 50px;
