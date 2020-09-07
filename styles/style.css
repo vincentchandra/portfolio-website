@@ -207,3 +207,9 @@ footer p {
     margin: 0 50px;
   }
 }
+@media only screen and (max-width: 600px) {
+  header {
+    background-position: 55% center;
+    background-size: 400%;
+  }
+}
