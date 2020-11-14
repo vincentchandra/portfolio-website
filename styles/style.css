@@ -119,13 +119,17 @@ nav button {
 .project-container p {
   text-decoration: none;
   margin-top: 30px;
+  margin-bottom: 100px;
 }
 .project-container .projects-content {
   text-decoration: none;
 }
 
 .certificates-content {
-  margin: 30px;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 .certificates-content img {
   height: 500px;
@@ -211,5 +215,8 @@ footer p {
   header {
     background-position: 55% center;
     background-size: 400%;
+  }
+  .tweetnow img {
+    height: 200px;
   }
 }
