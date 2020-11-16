@@ -139,6 +139,11 @@ nav button {
   text-decoration: none;
 }
 
+.fab:hover {
+  color: rgb(241, 56, 102);
+  transition: 0.2s;
+}
+
 .certificates-content {
   margin-bottom: 100px;
   margin-left: 30px;
