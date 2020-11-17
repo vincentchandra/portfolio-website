@@ -66,6 +66,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#certificates">CERTIFICATES</a>
           </li>
+          <li>
+            <i onclick="myFunction()" class="switch fas fa-moon"></i>
+          </li>
         </ul>
       </div>
     </nav>
@@ -322,6 +325,33 @@
       <p>Vincent Christian Chandra &#169 2020</p>
     </footer>
 
+
+    <script>
+      function myFunction() {
+        let element = document.body;
+        element.classList.toggle("dark-mode");
+        
+        let toggle = document.querySelector('.switch');
+        if(toggle.className == 'switch fas fa-moon'){
+          toggle.className = 'switch fas fa-sun'
+        }
+        else{
+          toggle.className = 'switch fas fa-moon'
+        }
+        
+        let title = document.querySelectorAll('.title');
+        title.forEach(element => {
+            if(element.style.color == 'white'){ 
+              element.style.color = 'rgb(241, 56, 102)'
+
+            }
+            else { 
+              element.style.color = 'white';
+            }
+        });
+        
+      }
+      </script>
     <!-- <a href="https://www.freepik.com/vectors/background"
       >Background vector created by freepik - www.freepik.com</a
     > -->

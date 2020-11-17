@@ -1,11 +1,18 @@
 html,
 body {
+  transition: color 500ms, background-color 500ms;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   height: 100%;
   font-family: "Raleway", sans-serif !important;
   scroll-behavior: smooth;
+}
+
+.dark-mode {
+  background-color: rgb(7, 1, 37);
+  /* background-color: rgb(6, 5, 46); */
+  color: white;
 }
 html {
   overflow-x: hidden;
@@ -45,7 +52,8 @@ header p {
   font-size: 30px;
 }
 nav {
-  background-color: rgb(6, 5, 46);
+  /* background-color: rgb(6, 5, 46); */
+  background-color: rgb(7, 1, 37);
   border-bottom: 3.5px solid rgb(212, 72, 182);
 }
 nav li a {
@@ -59,9 +67,22 @@ nav li a:hover {
 nav button {
   border-color: white;
 }
-.title {
-  color: rgb(241, 56, 102);
+.fa-moon {
+  margin-top: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: large;
+}
+.fa-sun {
+  margin-top: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: large;
+}
 
+.title {
+  transition: color 500ms;
+  color: rgb(241, 56, 102);
   padding-top: 100px;
   text-align: center;
   align-items: center;
@@ -69,7 +90,7 @@ nav button {
 .line {
   height: 50px;
   width: 75px;
-  border-top: 3px solid rgb(241, 56, 102);
+  border-top: 3px solid;
   /* position: absolute; */
   margin: auto;
 }
@@ -194,7 +215,7 @@ footer {
   margin-top: 150px;
   color: white;
   text-align: center;
-  background-color: rgb(6, 5, 46);
+  background-color: rgb(7, 1, 37);
   height: 200px;
 }
 footer p {
@@ -204,6 +225,12 @@ footer p {
 }
 
 @media only screen and (max-width: 1000px) {
+  .fa-moon {
+    margin-left: 30px;
+  }
+  .fa-sun {
+    margin-left: 30px;
+  }
   header {
     background-position: center center;
     background-size: 200%;
